@@ -1,104 +1,11 @@
 <!Doctype Html>
 <Html>
 <head>
+    <link href="task1 Calculator.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calculator</title>
-<script type="text/javascript">
-	// This function clear all the values
-function clearScreen() {
-    document.getElementById("result").value = "";
-}
- 
-// This function display values
-function display(value) {
-    document.getElementById("result").value += value;
-}
- 
-// This function evaluates the expression and returns result
-function calculate() {
-    var p = document.getElementById("result").value;
-    var q = eval(p);
-    document.getElementById("result").value = q;
-}
-</script>
 </head>
-	<style type="text/css">
-	table, td{
-		border: none;	
-		border-collapse: collapse;
-		padding: 5px;
-	}
 	
-	.myCalculator{
-			height:400px;
-			width:400x;
-			background: transparent;
-			box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
-			border: 1px solid #717377;
-	 		}
-	
-	body{
-			width: 99%;
-			height: 95vh;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			margin: 15px;
-			background: linear-gradient(45deg, #0a0a0a, #3a4452);
-		  }
-	input{
-			padding: 15px;
-			outline: none;
-			border: 1px solid grey;
-			font-size:24px;
-			border-radius:5px;
-			width:100%;
-			text-align: right;
-            cursor: pointer;
-			background: transparent;
-			box-shadow: 0px 3px 15px rgbs(84, 84, 84, 0.1);
-			color: #ffffff;
-		}
-	button{
-			border: none;
-			width: 60px;
-			height: 60px;
-			margin: 10px;
-			border-radius: 50%;
-			background: transparent;
-			color: #ffffff;
-			font-size: 20px;
-			box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
-			cursor: pointer;
-		}
-	input::placeholder{
-			color: #ffffff;
-		}
-	.display-box{
-		width: 100%;
-		height: 50px;
-		padding: 0px;
-		margin: 0px;
-		background-color: grey;
-	}
-	h2{
-			font-family:Colonna MT;
-			font-size:400%;
-			color:whitesmoke;
-			}
-	#btn {
-			background-color: #fb0066;
-     }
-	#eqbtn{
-			background-color: #fb7c14;
-		}
-	#sim{
-			background-color:green;
-			}
-	#num{
-			background-color:black;
-			}
-	</style>
 	   <body><center>
 	   <h2>Calculator</h2>
 	   <table class = "myCalculator" border="1" cellpadding = "15px" cellspacing = "15px">
@@ -135,5 +42,6 @@ function calculate() {
 			<td><input type ="button" onclick="display('/')" value="/" id="sim"></td>
 		</tr>
 		</table>
+		<script src="task1 calculator.js"></script>
 		</body>
 		<html>
